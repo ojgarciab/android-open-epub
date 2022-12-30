@@ -22,10 +22,10 @@ public class MainActivity extends AppCompatActivity {
             ruta = ruta.substring(ruta.indexOf(":") + 1);
             textView1.setText(ruta);
             File file = new File(ruta);
-            textView2.setText(file.exists() ? "SI" : "NO");
+            textView2.setText(file.exists() ? "Existe" : "No existe");
         } catch (Exception e) {
-            textView1.setText("Primera");
-            textView2.setText("ejecución");
+            textView1.setText("Apertura normal");
+            textView2.setText("de la aplicación");
         }
 
     }
